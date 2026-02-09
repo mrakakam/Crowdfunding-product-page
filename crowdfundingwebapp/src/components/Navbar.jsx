@@ -1,28 +1,54 @@
-import hamburgerimg from "../assets/images/icon-hamburger.svg"
-import closeimg from "../assets/images/icon-close-menu.svg"
+import { useState } from "react";
+import hamburgerimg from "../assets/images/icon-hamburger.svg";
+import closeimg from "../assets/images/icon-close-menu.svg";
 
-export const Navbar = () =>{
+export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    return(
+  return (
+    <nav
+      className="
+        bg-cover bg-center
+        h-96
+        px-6 py-8
+        flex items-start justify-between
+        bg-[url('/image-hero-mobile.jpg')]
+        md:bg-[url('/image-hero-desktop.jpg')]
+      "
+    >
+      {/* Logo */}
+      <h3 className="font-extrabold text-white text-lg">
+        Crowdfund
+      </h3>
 
-        <>
-        
-            <nav className="bg-center h-98 bg-cover  flex flex-row items-center justify-between p-25" style={{backgroundImage:"url('/image-hero-desktop.jpg')"}}>
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex gap-10">
+        <li className="text-white cursor-pointer">About</li>
+        <li className="text-white cursor-pointer">Discovery</li>
+        <li className="text-white cursor-pointer">Get Started</li>
+      </ul>
 
+      {/* Mobile Hamburger */}
+      <button
+        className="md:hidden"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <img
+          src={menuOpen ? closeimg : hamburgerimg}
+          alt="menu toggle"
+        />
+      </button>
 
-                <h3 className="font-extrabold text-white ">Crowdfund</h3>
-
-                <ul className="flex flex-row gap-12">
-
-                    <li className="text-white font-serif">About</li>
-
-                    <li className="text-white font-serif">Discovery</li>
-
-                    <li className="text-white font-serif">Get Started</li>
-
-                </ul>
-            </nav>
-        
-        </>
-    )
-}
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="absolute top-24 left-6 right-6 bg-white rounded-xl shadow-lg md:hidden">
+          <ul className="flex flex-col divide-y">
+            <li className="p-4 font-medium">About</li>
+            <li className="p-4 font-medium">Discovery</li>
+            <li className="p-4 font-medium">Get Started</li>
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
+};
