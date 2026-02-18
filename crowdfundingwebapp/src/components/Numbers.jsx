@@ -50,7 +50,7 @@ export const Numbers = () => {
           <div className="w-full h-4 bg-gray-200 rounded-full">
             
             {/* Dark green progress (80%) */}
-            <div className="h-4 bg-green-700 rounded-full w-[80%]"></div>
+            <div className="h-4 bg-[#00cec8] rounded-full w-[80%]"></div>
 
           </div>
         </div>

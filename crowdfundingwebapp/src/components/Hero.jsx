@@ -27,8 +27,8 @@ export const Hero = () => {
             Mastercraft Bamboo Monitor Riser
           </h1>
 
-          <p className="text-gray-600 text-sm md:text-base">
-            Sturdy and stylish bamboo monitor stand for your desk.
+          <p className="text-gray-500 text-sm md:text-base">
+            A beautiful & handcrafted monitor stand to reduce neck and eye strain.
           </p>
         </div>
 
@@ -36,13 +36,12 @@ export const Hero = () => {
         <div className="flex flex-row justify-between items-center gap-4 mt-8">
           
           {/* Back Project Button */}
-          <button className="flex-1 bg-green-500 text-white py-3 rounded-full hover:bg-green-600 transition duration-300">
+          <button className=" bg-[#008b8b] text-white py-3 px-7 rounded-full hover:bg-[#008b8b] cursor-pointer transition duration-300">
             Back this project
           </button>
-
           {/* Bookmark Button */}
-          <button className="flex items-center justify-center bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition duration-300">
-            <img src={bookmarkimg} alt="Bookmark Icon" />
+          <button className="flex items-center justify-center px-7 bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition duration-300">
+            <img src={bookmarkimg} alt="Bookmark Icon" className="h-7" />
             
             {/* Hidden on mobile, visible on desktop */}
             <span className="hidden md:inline ml-3 font-medium">
