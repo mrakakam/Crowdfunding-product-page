@@ -1,3 +1,5 @@
+import checkimg from '../assets/images/icon-check.svg';
+
 export const About = () => {
   return (
     <>
