@@ -20,7 +20,7 @@ export const About = () => {
         </div>
 
         {/* Second Div */}
-        <div className="border rounded-xl p-6 text-left space-y-4">
+        <div className="border border-gray-300  rounded-xl p-6 text-left space-y-4">
           
           {/* Title + Pledge */}
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
@@ -52,7 +52,7 @@ export const About = () => {
         </div>
 
         {/* Third Div */}
-        <div className="border rounded-xl p-6 text-left space-y-4">
+        <div className="border border-gray-300  rounded-xl p-6 text-left space-y-4">
           
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
             <h2 className="font-bold text-lg">
@@ -82,7 +82,7 @@ export const About = () => {
         </div>
 
         {/* Fourth Div (Blurred) */}
-        <div className="border rounded-xl p-6 text-left space-y-4 opacity-50">
+        <div className="border border-gray-300 rounded-xl p-6 text-left space-y-4 opacity-50">
           
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
             <h2 className="font-bold text-lg">
