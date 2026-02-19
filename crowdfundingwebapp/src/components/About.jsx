@@ -1,122 +1,117 @@
+export const About = () => {
+  return (
+    <>
+      <section className="max-w-2xl mx-4 md:mx-auto bg-white rounded-xl shadow-lg p-8 mt-8 space-y-8">
 
+        {/* First Div */}
+        <div className="text-left space-y-6">
+          <h2 className="text-2xl font-bold text-black">
+            About this project
+          </h2>
 
-export const About = ()=>{
+          <p className="text-gray-600 leading-relaxed">
+            The Mastercraft Bamboo Monitor Riser is a sturdy platform that elevates
+            your screen to a more comfortable viewing height.
+          </p>
 
-    return(
+          <p className="text-gray-600 leading-relaxed">
+            Featuring artisan craftmanship, the simplicity of design creates extra desk space.
+          </p>
+        </div>
 
-        <>
-        
-            <section>
+        {/* Second Div */}
+        <div className="border rounded-xl p-6 text-left space-y-4">
+          
+          {/* Title + Pledge */}
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+            <h2 className="font-bold text-lg">
+              Bamboo Stand
+            </h2>
+            <p className="text-[#008b8b] font-medium">
+              Pledge $25 or more
+            </p>
+          </div>
 
-                {/* first divof this section */}
+          <p className="text-gray-600 text-sm leading-relaxed">
+            You get ergonomic stand made of natural bamboo.
+          </p>
 
-                <div>
+          {/* Number + Button */}
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mt-4">
+            
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-bold">101</h1>
+              <p className="text-gray-500 text-sm">left</p>
+            </div>
 
-                    <h2>About this project</h2>
+            <button className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto">
+              Select Reward
+            </button>
 
-                    <p>
-                        The Mastercraft Bamboo Monitor Riser is a sturdy platform that elevates <br /> 
-                        your screen to a more comfortable viewing height. Placing your monitor at eye level has <br />
-                        the potential to improve your posture and make comfortable while at work, <br />
-                        helping you stay focused on the task at hand.
-                    </p>
+          </div>
+        </div>
 
-                    <p>
-                        Featuring artisan craftmanship, the simplicity of design creates extra desk space below <br /> 
-                        your computers to allow notepads , pens, and USB sticks to be stored under the stand.
-                    </p>
+        {/* Third Div */}
+        <div className="border rounded-xl p-6 text-left space-y-4">
+          
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+            <h2 className="font-bold text-lg">
+              Black Edition Stand
+            </h2>
+            <p className="text-[#008b8b] font-medium">
+              Pledge $75 or more
+            </p>
+          </div>
 
-                </div>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            You get Black Special Edition computer stand and a personal thank you.
+          </p>
 
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mt-4">
+            
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-bold">64</h1>
+              <p className="text-gray-500 text-sm">left</p>
+            </div>
 
-                {/* second div called " bamboo-stand " */}
+            <button className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto">
+              Select Reward
+            </button>
 
-                <div>
+          </div>
+        </div>
 
-                    <div>
+        {/* Fourth Div (Blurred) */}
+        <div className="border rounded-xl p-6 text-left space-y-4 opacity-50">
+          
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+            <h2 className="font-bold text-lg">
+              Mahogany Special Edition
+            </h2>
+            <p className="text-[#008b8b] font-medium">
+              Pledge $200 or more
+            </p>
+          </div>
 
-                        <h2>Bamboo Stands</h2>
-                        <p className="text-[#008b8b]">Pledge $25 or more</p>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            You get two Special Edition Mahogany stands.
+          </p>
 
-                    </div>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mt-4">
+            
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-bold">0</h1>
+              <p className="text-gray-500 text-sm">left</p>
+            </div>
 
-                    <p>
-                        You get ergonomic stand made of natural bamboo you've helped us launch <br />
-                        our promotional campaign, and you'll be added to a special Backer member list.
-                    </p>
+            <button className="bg-gray-700 text-white px-6 py-2 rounded-full w-full md:w-auto">
+              Out of stock
+            </button>
 
-                    <div>
+          </div>
+        </div>
 
-                        <span> <h1>101</h1> <p>left</p> </span>
-
-                        <button className="bg-[#008b8b] text-white">Select Reward</button>
-
-                    </div>
-
-                    
-                </div>
-
-
-                {/* third div called " black-edition " */}
-
-                 <div>
-
-                    <div>
-
-                        <h2>Black Edition Stands</h2>
-
-                        <p className="text-[#008b8b]">Pledge $75 or more</p>
-
-                    </div>
-
-                    <p>
-                        You get Black Special Edition computer stand and a personal thank you. You'll <br /> 
-                        be added to our Backer member list. Shipping is included.
-                    </p>
-
-                    <div>
-                        <span> <h1>4</h1> <p>left</p> </span>
-
-                        <button className="bg-[#008b8b] text-white">Select Reward</button>
-                    </div>
-
-                    
-                </div>
-
-                {/* fourth div called " mahogany-edition " */}
-
-
-                 <div>
-
-                    <div>
-
-                        <h2>Mahogany Special Edition</h2>
-
-                        <p className="text-[#008b8b]">Pledge $200 or more</p>
-
-                    </div>
-
-                    <p>
-                        You get two Special Edition Mahogany stands , a Backer T-shirt, and a personal <br />
-                        thank you. You'll be added to our Backer member list. Shipping is included.
-                    </p>
-
-                    <div>
-
-                        <span> <h1>0</h1> <p>left</p> </span>
-
-                        <button className="bg-gray-700 text-white">Out of stock</button>
-
-                    </div>
-
-                    
-                </div>
-
-
-
-
-            </section>
-        
-        </>
-    )
-}
+      </section>
+    </>
+  );
+};
