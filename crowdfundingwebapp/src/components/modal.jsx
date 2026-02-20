@@ -8,7 +8,12 @@ export const Modal = () => {
         
         <>
         
-        
+            <section>
+
+
+
+                
+            </section>
         
         </>
     )
