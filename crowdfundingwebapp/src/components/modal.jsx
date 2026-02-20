@@ -11,8 +11,14 @@ export const Modal = () => {
             <section>
 
 
+                <div>
 
-                
+                    <h2>Back to this project</h2>
+
+                    <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+
+                </div>
+
             </section>
         
         </>
