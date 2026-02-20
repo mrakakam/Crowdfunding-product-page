@@ -39,6 +39,7 @@ export const Modal = () => {
 
 
                         </div>
+
                     </label>
 
 
@@ -90,32 +91,34 @@ export const Modal = () => {
 
 
                     </label>
+
+
                     <label htmlFor="">
 
 
-                        <input type="radio" name="bamboo-stand" id="" />
+                        <input type="radio" name="Black-Edition" id="" />
 
                         <div>
 
                             <span>
 
-                                <h3>Bamboo Stand</h3>
+                                <h3>Black Edition Stand</h3>
 
-                                <p>Pledge $25 or more</p>
+                                <p>Pledge $75 or more</p>
 
                             </span>
 
                             <span>
 
-                                <h3>101</h3>
+                                <h3>64</h3>
 
                                 <p>left</p>
 
                             </span>
 
                             <p>
-                                You get an ergonomic stand made of natural bamboo. You've helped us launch <br/> 
-                                 our promotional campaign, and you'll be added to a special Backer member list.
+                                You get a Black Special Edition computer stand and a personal thank you. <br/>  
+                                You'll be added to our Backer member list. Shipping is included.
                             </p>
 
 
@@ -125,7 +128,7 @@ export const Modal = () => {
 
                                 <div>
 
-                                    <input type="button" value="Continue" placeholder='$25' />
+                                    <input type="button" value="Continue" placeholder='$75' />
 
                                     <button>Continue</button>
 
@@ -138,32 +141,34 @@ export const Modal = () => {
 
 
                     </label>
+
+
                     <label htmlFor="">
 
 
-                        <input type="radio" name="bamboo-stand" id="" />
+                        <input type="radio" name="Mahogany" id="" />
 
                         <div>
 
                             <span>
 
-                                <h3>Bamboo Stand</h3>
+                                <h3>Mahogany Special Edition</h3>
 
-                                <p>Pledge $25 or more</p>
+                                <p>Pledge $200 or more</p>
 
                             </span>
 
                             <span>
 
-                                <h3>101</h3>
+                                <h3>0</h3>
 
                                 <p>left</p>
 
                             </span>
 
                             <p>
-                                You get an ergonomic stand made of natural bamboo. You've helped us launch <br/> 
-                                 our promotional campaign, and you'll be added to a special Backer member list.
+                                You get two Special Edition Mahogany stands, a Backer T-shirt and a personal <br/>  
+                                thank you. You'll be added to our Backer member list. Shipping is included
                             </p>
 
 
@@ -173,7 +178,7 @@ export const Modal = () => {
 
                                 <div>
 
-                                    <input type="button" value="Continue" placeholder='$25' />
+                                    <input type="button" value="Continue" placeholder='$200' />
 
                                     <button>Continue</button>
 
