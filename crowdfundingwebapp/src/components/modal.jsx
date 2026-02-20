@@ -11,6 +11,9 @@ export const Modal = () => {
             <section>
 
 
+                <img src={closeimg} alt="Close" />
+
+
                 <div>
 
                     <h2>Back to this project</h2>
