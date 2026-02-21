@@ -1,45 +1,50 @@
 import { useState } from "react";
 import closeimg from "../assets/images/icon-close-menu.svg";
 
-export const Modal = () => {
+export const Modal = ({ onClose }) => {
   const [selected, setSelected] = useState("");
 
   return (
-    <section className="bg-white max-w-2xl mx-auto p-8 rounded-xl relative flex flex-col items-start gap-6">
+    <section className="bg-white max-w-2xl mx-auto p-8 rounded-xl relative flex flex-col items-start gap-8">
 
-      {/* Close Button */}
+      {/* Close Button (slightly above header text) */}
       <img
         src={closeimg}
         alt="Close"
-        className="absolute right-6 top-6 cursor-pointer"
+        onClick={onClose}
+        className="absolute right-8 top-8 cursor-pointer"
       />
 
       {/* Header */}
-      <div className="flex flex-col items-start gap-3">
-        <h2 className="text-2xl font-bold">Back to this project</h2>
+      <div className="flex flex-col items-start gap-3 w-full">
+        <h2 className="text-2xl font-bold">
+          Back to this project
+        </h2>
         <p className="text-gray-500">
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out
           in the world?
         </p>
       </div>
 
-      {/* All Cards */}
+      {/* Cards Container */}
       <div className="flex flex-col items-start gap-6 w-full">
 
         {/* ================= PLEDGE WITH NO REWARD ================= */}
-        <label className="w-full border rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+        <label className="w-full border border-gray-300 rounded-xl p-6 flex flex-col gap-4 cursor-pointer hover:border-[#008b8b] transition">
 
-          {/* Top row */}
-          <div className="flex items-start gap-4">
+          {/* Radio + Title Row */}
+          <div className="flex items-center gap-4">
             <input
               type="radio"
               name="pledge"
               onChange={() => setSelected("none")}
             />
-            <h3 className="font-bold">Pledge with no reward</h3>
+            <h3 className="font-bold">
+              Pledge with no reward
+            </h3>
           </div>
 
-          {/* Description */}
+          {/* Description under both */}
           <p className="text-gray-500 ml-8">
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
@@ -48,11 +53,12 @@ export const Modal = () => {
         </label>
 
         {/* ================= BAMBOO STAND ================= */}
-        <label className="w-full border rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+        <label className="w-full border border-gray-300 rounded-xl p-6 flex flex-col gap-4 cursor-pointer hover:border-[#008b8b] transition">
 
-          {/* Top row */}
-          <div className="flex items-start justify-between">
+          {/* Top Row */}
+          <div className="flex items-start justify-between w-full">
 
+            {/* Left side */}
             <div className="flex items-start gap-4">
               <input
                 type="radio"
@@ -61,50 +67,54 @@ export const Modal = () => {
               />
 
               <div className="flex flex-col">
-                <div className="flex gap-4 items-center">
+                <div className="flex items-center gap-4">
                   <h3 className="font-bold">Bamboo Stand</h3>
-                  <p className="text-green-600 text-sm">
+                  <p className="text-[#008b8b] text-sm">
                     Pledge $25 or more
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Right side */}
             <div className="flex items-center gap-2">
-              <h3 className="font-bold">101</h3>
+              <h3 className="font-bold text-lg">101</h3>
               <p className="text-gray-500 text-sm">left</p>
             </div>
           </div>
 
-          {/* Description */}
+          {/* Description under row */}
           <p className="text-gray-500 ml-8">
             You get an ergonomic stand made of natural bamboo. You've helped us
             launch our promotional campaign, and you'll be added to a special
             Backer member list.
           </p>
 
-          {/* Bottom Section */}
-          <div className="border-t pt-4 flex items-center justify-between ml-8">
+          {/* Bottom Section with Border */}
+          <div className="border-t border-gray-300 pt-4 flex items-center justify-between ml-8">
 
-            <p className="text-gray-500">Enter your pledge</p>
+            <p className="text-gray-500">
+              Enter your pledge
+            </p>
 
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <input
                 type="number"
                 placeholder="$25"
-                className="border rounded-full px-4 py-2 w-24"
+                className="border border-gray-300 rounded-full px-4 py-2 w-24"
               />
-              <button className="bg-green-600 text-white px-6 py-2 rounded-full">
+              <button className="bg-[#008b8b] text-white px-6 py-2 rounded-full hover:opacity-90">
                 Continue
               </button>
             </div>
+
           </div>
         </label>
 
         {/* ================= BLACK EDITION ================= */}
-        <label className="w-full border rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+        <label className="w-full border border-gray-300 rounded-xl p-6 flex flex-col gap-4 cursor-pointer hover:border-[#008b8b] transition">
 
-          <div className="flex items-start justify-between">
+          <div className="flex items-start justify-between w-full">
 
             <div className="flex items-start gap-4">
               <input
@@ -113,10 +123,10 @@ export const Modal = () => {
                 onChange={() => setSelected("black")}
               />
 
-              <div>
-                <div className="flex gap-4 items-center">
+              <div className="flex flex-col">
+                <div className="flex items-center gap-4">
                   <h3 className="font-bold">Black Edition Stand</h3>
-                  <p className="text-green-600 text-sm">
+                  <p className="text-[#008b8b] text-sm">
                     Pledge $75 or more
                   </p>
                 </div>
@@ -124,7 +134,7 @@ export const Modal = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <h3 className="font-bold">64</h3>
+              <h3 className="font-bold text-lg">64</h3>
               <p className="text-gray-500 text-sm">left</p>
             </div>
           </div>
@@ -135,53 +145,55 @@ export const Modal = () => {
             included.
           </p>
 
-          <div className="border-t pt-4 flex items-center justify-between ml-8">
-            <p className="text-gray-500">Enter your pledge</p>
+          <div className="border-t border-gray-300 pt-4 flex items-center justify-between ml-8">
 
-            <div className="flex gap-3">
+            <p className="text-gray-500">
+              Enter your pledge
+            </p>
+
+            <div className="flex items-center gap-3">
               <input
                 type="number"
                 placeholder="$75"
-                className="border rounded-full px-4 py-2 w-24"
+                className="border border-gray-300 rounded-full px-4 py-2 w-24"
               />
-              <button className="bg-green-600 text-white px-6 py-2 rounded-full">
+              <button className="bg-[#008b8b] text-white px-6 py-2 rounded-full hover:opacity-90">
                 Continue
               </button>
             </div>
+
           </div>
         </label>
 
         {/* ================= MAHOGANY (BLURRED) ================= */}
-        <label className="w-full border rounded-xl p-6 flex flex-col gap-4 opacity-50 blur-sm pointer-events-none">
+        <label className="w-full border border-gray-300 rounded-xl p-6 flex flex-col gap-4 opacity-70 pointer-events-none">
+  <div className="flex items-start justify-between w-full">
+    <div className="flex items-start gap-4">
+      <input type="radio" disabled />
 
-          <div className="flex items-start justify-between">
-
-            <div className="flex items-start gap-4">
-              <input type="radio" disabled />
-
-              <div>
-                <div className="flex gap-4 items-center">
-                  <h3 className="font-bold">
-                    Mahogany Special Edition
-                  </h3>
-                  <p className="text-green-600 text-sm">
-                    Pledge $200 or more
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <h3 className="font-bold">0</h3>
-              <p className="text-gray-500 text-sm">left</p>
-            </div>
-          </div>
-
-          <p className="text-gray-500 ml-8">
-            You get two Special Edition Mahogany stands, a Backer T-shirt and a
-            personal thank you.
+      <div className="flex flex-col">
+        <div className="flex items-center gap-4">
+          <h3 className="font-bold">
+            Mahogany Special Edition
+          </h3>
+          <p className="text-[#008b8b] text-sm">
+            Pledge $200 or more
           </p>
-        </label>
+        </div>
+      </div>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <h3 className="font-bold text-lg">0</h3>
+      <p className="text-gray-500 text-sm">left</p>
+    </div>
+  </div>
+
+  <p className="text-gray-500 ml-8">
+    You get two Special Edition Mahogany stands, a Backer T-shirt and a
+    personal thank you.
+  </p>
+</label>
 
       </div>
     </section>
