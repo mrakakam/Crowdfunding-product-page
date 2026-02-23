@@ -122,7 +122,7 @@ name="pledge"
 onChange={() => setSelected("none")}
 />
 
-<h3 className="font-bold">
+<h3 className="font-bold hover:text-[#008b8b]">
 Pledge with no reward
 </h3>
 
@@ -160,7 +160,7 @@ onChange={() => setSelected("bamboo")}
 
 <div>
 
-<h3 className="font-bold">
+<h3 className="font-bold hover:text-[#008b8b]">
 Bamboo Stand
 </h3>
 
@@ -265,7 +265,7 @@ onChange={() => setSelected("black")}
 
 <div>
 
-<h3 className="font-bold">
+<h3 className="font-bold hover:text-[#008b8b]">
 Black Edition Stand
 </h3>
 
