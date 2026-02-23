@@ -40,7 +40,7 @@ export const Hero = () => {
             Back this project
           </button>
           {/* Bookmark Button */}
-          <button className="flex items-center justify-center px-7 bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition duration-300">
+          <button className="flex items-center justify-center px-7 bg-gray-100 p-3 rounded-full hover:bg-gray-200  cursor-pointer transition duration-300">
             <img src={bookmarkimg} alt="Bookmark Icon" className="h-7" />
             
             {/* Hidden on mobile, visible on desktop */}
