@@ -36,7 +36,7 @@ export const About = () => {
             </div>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto"
+              className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto cursor-pointer"
             >
               Select Reward
             </button>
@@ -59,7 +59,7 @@ export const About = () => {
             </div>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto"
+              className="bg-[#008b8b] text-white px-6 py-2 rounded-full w-full md:w-auto cursor-pointer"
             >
               Select Reward
             </button>
